@@ -31,6 +31,7 @@ public class ControllerV3HandlerAdapter implements MyHandlerAdapter {
         Map<String, String> paramMap = new HashMap<>();
         request.getParameterNames().asIterator()
                 .forEachRemaining(paramName -> paramMap.put(paramName, request.getParameter(paramName)));
+
         return paramMap;
     }
 }
